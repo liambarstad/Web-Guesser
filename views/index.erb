@@ -1,8 +1,14 @@
 <html>
-  <head></head>
+  <head>
+    <link rel="stylsheet" href="styles.css">
+  </head>
+
   <body>
-    <p>
-      The SECRET NUMBER is <%= number %>
-    </p>
+    <form>
+      <input type='text' name='guess' />
+      <input type='submit' value='Guess!' />
+    </form>
+    <p><%= check_guess(guess) %></p>
+    <p><%= secret_message(guess) %></p>
   </body>
 </html>
